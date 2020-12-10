@@ -32,10 +32,11 @@
                 android:id="@+id/outputView"
                 android:layout_width="334dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="144dp"
                 android:text="Result"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="@+id/inputView"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/inputView"
                 app:layout_constraintTop_toBottomOf="@+id/inputView" />
 
@@ -43,19 +44,21 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/Grey">
 
             <Button
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
                 android:text="1"
                 android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.047" />
 
             <Button
                 android:id="@+id/button2"
@@ -185,6 +188,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginLeft="12dp"
                 android:text="="
+                android:backgroundTint="@color/Orangy"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/button0"
                 app:layout_constraintStart_toEndOf="@+id/button0"
@@ -199,6 +203,7 @@
                 android:layout_marginLeft="12dp"
 
                 android:text="+"
+                android:backgroundTint="@color/Blueish"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/button3"
@@ -213,6 +218,7 @@
                 android:layout_marginTop="12dp"
 
                 android:text="-"
+                android:backgroundTint="@color/Blueish"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="@+id/buttonPlus"
@@ -226,7 +232,10 @@
                 android:layout_marginTop="12dp"
 
                 android:text="x"
+                android:backgroundTint="@color/Blueish"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="@+id/buttonMinus"
                 app:layout_constraintStart_toStartOf="@+id/buttonMinus"
                 app:layout_constraintTop_toBottomOf="@+id/buttonMinus" />
@@ -238,6 +247,7 @@
                 android:layout_marginTop="12dp"
 
                 android:text="÷"
+                android:backgroundTint="@color/Blueish"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="@+id/buttonMultiply"
@@ -245,12 +255,15 @@
 
             <Button
                 android:id="@+id/buttonClear"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="390dp"
                 android:layout_height="61dp"
-                android:layout_marginTop="12dp"
 
+                android:layout_marginTop="12dp"
+                android:soundEffectsEnabled="true"
                 android:text="Clear"
                 android:textColor="@android:color/white"
+                android:backgroundTint="@color/Reddish"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

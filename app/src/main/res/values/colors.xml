@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="Reddish">#FF3F25</color>
+    <color name="Reddish">#FF2525</color>
+    <color name="Blueish">#0077D6</color>
+    <color name="Lightblueish">#00ABD6</color>
+    <color name="Orangy">#FF6325</color>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="Grey">#B1B1B1</color>
 </resources>
