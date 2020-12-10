@@ -11,32 +11,35 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="387dp"
-            android:layout_height="332dp"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="329dp">
 
             <TextView
                 android:id="@+id/inputView"
-                android:layout_width="match_parent"
+                android:layout_width="363dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="24dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="Calculate here!"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/resultView"
-                android:layout_width="match_parent"
+                android:id="@+id/outputView"
+                android:layout_width="334dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="15dp"
                 android:text="Result"
-                android:textSize="30sp" />
-        </LinearLayout>
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/inputView"
+                app:layout_constraintStart_toStartOf="@+id/inputView"
+                app:layout_constraintTop_toBottomOf="@+id/inputView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -176,7 +179,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <Button
-                android:id="@+id/buttonEquals"
+                android:id="@+id/buttonEnter"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_marginStart="12dp"
@@ -194,7 +197,7 @@
                 android:layout_height="65dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginLeft="12dp"
-                android:background="@color/colorPrimaryDark"
+
                 android:text="+"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
@@ -208,7 +211,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_marginTop="12dp"
-                android:background="@color/colorPrimaryDark"
+
                 android:text="-"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
@@ -221,7 +224,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_marginTop="12dp"
-                android:background="@color/colorPrimaryDark"
+
                 android:text="x"
                 android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="@+id/buttonMinus"
@@ -233,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_marginTop="12dp"
-                android:background="@color/colorPrimaryDark"
+
                 android:text="÷"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
@@ -245,7 +248,7 @@
                 android:layout_width="390dp"
                 android:layout_height="61dp"
                 android:layout_marginTop="12dp"
-                android:background="@android:color/red"
+
                 android:text="Clear"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
